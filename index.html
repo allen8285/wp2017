@@ -11,6 +11,10 @@
   font-size: 2em;
   font-weight: bold;
   }
+  h2{
+  font-size: 2em;
+  font-weight: bold;
+  }
   a{
   font-size: 2em;
   font-weight: bold;
@@ -41,7 +45,7 @@
   <script>
   $(document).ready(function(){
       $("button").click(function(){
-              $("h1").toggle();
+              $("h2").toggle();
                   });
                   });
   </script>
@@ -64,7 +68,7 @@
       <button class="btn" onclick="$('#fact').show('slow')">Actually..</button>
       <br>
       <div id="fact" style="display: none;">
-        <h1>This is the subject I hate the most!!</h1>
+        <h2>This is the subject I hate the most!!</h2>
       </div>
     <br>
     <div class="aftscr">
@@ -73,8 +77,8 @@
     <button class="btn" onclick="$('#note').show('slow')">What's this?</button>
     <br>
     <div id="note" style="display: none;">
-      <h1>Albert Einstein's note!!</h1>
-      <h1>And that's the reason why I'm not interested in physics.</h1>
+      <h2>Albert Einstein's note!!</h2>
+      <h2>And that's the reason why I'm not interested in physics.</h2>
     </div>
     <br>
     <div class="faq">
