@@ -14,6 +14,9 @@
   font-size: 2em;
   font-weight: bold;
   }
+  b{
+  font-size: 1em;
+  }
   </style>
   <style>
     .befscr{
@@ -29,8 +32,12 @@
     .faq{
         background-color: rgb(153,255,255);
         }
-    .faq2{
-        position: absolute;
+    section{
+        display: table;
+        }
+    .center{
+        display: table-cell;
+        vertical-align: middle;
         }
   </style>
   </head>
@@ -64,7 +71,9 @@
     </div>
     <br>
     <div class="faq">
-      <span class="faq2">FAQ</span>
+    <section>
+      <span class="center"><b href="https://allen8285.github.io/wp2017/">FAQ</b></span>
+    </section>
     </div>
     <script type="text/javascript" src="skrollr.min.js"></script>
     <script type="text/javascript">
