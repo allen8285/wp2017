@@ -5,6 +5,7 @@
     <title>WP2017-yohoho</title>
     <link rel="stylesheet" type="text/css" href="src/main.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <style>
   h1{
   font-size: 2em;
@@ -37,6 +38,13 @@
         text-align: center;
         }
   </style>
+  <script>
+  $(document).ready(function(){
+      $("button").click(function(){
+              $("h1").toggle();
+                  });
+                  });
+  </script>
   </head>
   <body>
     <h1>Hello!</h1>
@@ -66,7 +74,7 @@
     <br>
     <div id="note" style="display: none;">
       <h1>Albert Einstein's note!!</h1>
-      <p>And that's the reason why I'm not interested in physics.</p>
+      <h1>And that's the reason why I'm not interested in physics.</h1>
     </div>
     <br>
     <div class="faq">
