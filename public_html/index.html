@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+    <meta charset="UTF-8">
+    <title>WP2017-yohoho</title>
+    <link rel="stylesheet" type="text/css" href="src/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/JavaScript">
+      
+      $(document).ready(function() {  
+          $("#ajax_btn").click(function(){
+              $.ajax({
+                      method: "get",
+                      url: "./ajax_data",
+                      success: function(data) {
+                         $("#ajax_content").html(data)
+                         }
+                     })
+                 })  
+             })
+       
+       </script>
+  <style>
+         h1{
+             font-size: 2em;
+             font-weight: bold;
+          }
+         h2{
+             font-size: 2em;
+             font-weight: bold;
+          }
+         h3{
+             font-size: 2em;
+             font-weight: bold;
+          }
+          a{
+             font-size: 2em;
+             font-weight: bold;
+          }
+          b{
+             font-size: 1em;
+          }
+  </style>
+  <style>
+    .befscr{
+        data-0="opacity: 0;"
+        data-1200="opacity: 0.5;"
+        data-2400="opacity: 1;"
+    }
+
+    .aftscr{
+        opacity: 1;
+    }
+
+    .faq{
+        background-color: rgb(153,255,255);
+        }
+    .center{
+        vertical-align: middle;
+        text-align: center;
+        }
+  </style>
+  <script>
+  $(document).ready(function(){
+      $("button").click(function(){
+              $("h2").toggle();
+                  });
+                  });
+  </script>
+      </head>
+          <body>
+    
+    <form action="/get" method="get">
+        first name: <input name="fname" type="text"><br>
+            last name: <input name="lname" type="text"><br>
+                <button type="submit">submit via get</button>
+                </form>
+
+    <h1>Hello!</h1>
+    <a href="https://www.facebook.com/profile.php?id=100003194993757">I am Allen Liu.</a>
+    <h1>Department:Engineering Science.</h1>
+    <h1>Student ID:E94036089</h1>
+
+     <div>
+             <form id="ajax-form">                                                   
+                        ℃ to ℉: <input type="text" name="reply">
+                                    <button type="submit">submit </button>
+                                        </div>  
+                          <h1 id="ajax-output"></h1>
+             </form>
+    <div>
+             <form id="ajax-form">                                                   
+                        ℉ to ℃: <input type="text" name="reply1">
+                                 <button type="submit">submit </button>
+                                        </div>  
+                           <h1 id="ajax-output1"></h1>
+             </form>
+    <script src="index.js"></script> <script src="text.js"></script>                                                                                                                          
+                      
+
+    <div class="befscr">
+      <a href="https://allen8285.github.io/wp2017/"><img src="https://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-9/14572235_1077013769081779_2714257270686389933_n.jpg?oh=916b0fe5bc610b3c8b9a59cd86a6c2ff&oe=5A828235"></a>
+    </div>
+    <h1>TAs are so handsome, and you will be as rich as I do.</h1>
+    <br>
+
+      <div class="aftscr">
+        <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/401150_319511174757397_1361396539_n.jpg?oh=95d61d24a01d6ba7d64dfaf3ffbd0c62&oe=5A8736F0">
+      </div>
+      <h1>A History Professor!?</h1>
+      <button class="btn" onclick="$('#fact').show('slow')">Actually..</button>
+      <br>
+      <div id="fact" style="display: none;">
+        <h2>This is the subject I hate the most!!</h2>
+      </div>
+    <br>
+    <div class="aftscr">
+        <img src="https://lh3.googleusercontent.com/FAw9sAFJD6Eza92qhrguFmCYFm7SIiiH2njLrEyq21KdyR7c0Tbvk8yANQz_2cDNs8q8zQu_Dd-js_dXoLEDzjW3vYj8En0hTlFMgUYOGkcqyE_QGA79CuVcwQDwUXF5prVYKiEpLmIXn51I7PUXEs6YpNYFh9Pw_Cwlcxoy6EqnjgGVj6mQYPVwQvgEAkUVdWD8FdooA-VQEBUyK3Wpg1XDg6So5SM4C9MmCquBZ1g_Oqxjn9oc-LSqxw8fMhpFP1Xnz6Wu4SNWrWo-m_DhUFrCRN0mul5tD2Iy4y0eLQV-_aGkeW8T1P7OoyZgf2dCIKsmro__IRUJ5JSYvq7OV-pkxkF0uRz_XpOoGOxevAREuD2Kqf0dkOI_73xp4XVPROlhG683lQdih-YqXDWHXilHpFL9WfupVZtvHsRuMS8RWnHQnAuG3BJcFEIg78WoK5E3TdrIDBJmwdFMrlY_lBLue8ASyVLXvwAbsQz2ldsyomScWschU7RZ73H45YcYiGc7Mwvy7UMjZUsHeSjZJh3UIKoDk9bNaVlmyMDiiw3TflA2dO7iYKSKbSmy9qXGvj5DbFp1TyEtB0Q31CnIRQwA3Z49eSnHua0jWbuClA=w1127-h637-no">
+    </div>
+    <button class="btn" onclick="$('#note').show('slow')">What's this?</button>
+    <br>
+    <div id="note" style="display: none;">
+      <h2>Albert Einstein's note!!</h2>
+      <h2>And that's the reason why I'm not interested in physics.</h2>
+    </div>
+    <br>
+    <div class="faq">
+      <b class="center" href="https://www.facebook.com/profile.php?id=100003194993757">FAQ</b>
+    </div>
+    <script type="text/javascript" src="skrollr.min.js"></script>
+    <script type="text/javascript">
+    </script>
+  </body>
+</html>
